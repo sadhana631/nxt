@@ -47,7 +47,7 @@ const Header = props => {
                 Products
               </Link>
             </li>  
-            <li className="nav-menu-item"
+            <li className="nav-menu-item">
               <Link to="/cart" className="nav-link">
                 Cart
               </Link>
