@@ -4,7 +4,7 @@ import './index.css'
 
 const Header = props => {
   const onClickLogout = () => {
-    const history = props
+    const {history} = props
     Cookies.remove('jwt_token')
     history.replace('/login')
   }
@@ -20,7 +20,7 @@ const Header = props => {
           />
           <button 
             type="button" 
-            className="nav-mobile-btn">
+            className="nav-mobile-btn"
             onClick={onClickLogout}
           >  
             <img
@@ -56,7 +56,7 @@ const Header = props => {
           <button
             type="button"
             className="logout-desktop-button"
-            onClick="onClickLogout"
+            onClick={onClickLogout}
           >
             Logout
           </button>

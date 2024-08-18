@@ -6,8 +6,7 @@ import Header from '../Header'
 import './index.css'
 
 const products = () => {
-  const accessToken = Cookies.get('jwt-token')
-
+  const accessToken = Cookies.get('jwt_token')
   if (accessToken === undefined) {
     return <Redirect to="/login" />
   }
