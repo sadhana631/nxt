@@ -9,7 +9,7 @@ const Header = props => {
     history.replace('/login')
   }
 
-  return (  
+  return (
     <nav className="nav-header">
       <div className="nav-content">
         <div className="nav-bar-mobile-logo-container">
@@ -18,16 +18,16 @@ const Header = props => {
             src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
             alt="website logo"
           />
-          <button 
-            type="button" 
+          <button
+            type="button"
             className="nav-mobile-btn"
             onClick={onClickLogout}
-          >  
+          >
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png"
               alt="nav logout"
               className="nav-bar-img"
-           />
+            />
           </button>
         </div>
         <div className="nav-content nav-bar-large-container">
@@ -41,18 +41,18 @@ const Header = props => {
               <Link to="/Home" className="nav-link">
                 Home
               </Link>
-            </li>   
+            </li>
             <li className="nav-menu-item">
               <Link to="/products" className="nav-link">
                 Products
               </Link>
-            </li>  
+            </li>
             <li className="nav-menu-item">
               <Link to="/cart" className="nav-link">
                 Cart
               </Link>
-            </li>  
-          </ul>  
+            </li>
+          </ul>
           <button
             type="button"
             className="logout-desktop-button"
@@ -61,7 +61,7 @@ const Header = props => {
             Logout
           </button>
         </div>
-      </div>      
+      </div>
       <div className="nav-menu-mobile">
         <ul className="nav-menu-list-mobile">
           <li className="nav-menu-item-mobile">
@@ -71,37 +71,37 @@ const Header = props => {
                 alt="nav home"
                 className="nav-bar-img"
               />
-            </Link> 
+            </Link>
           </li>
           <li className="nav-menu-item-mobile">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png"
-            alt="nav products"
-            className="nav-bar-img"
-          />
-        </li>
-        <li className="nav-menu-item-mobile">
-          <Link to="/products" className="nav-link">
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png"
               alt="nav products"
               className="nav-bar-img"
             />
-          </Link>
-        </li>      
-        <li className="nav-menu-item-mobile">
-          <Link to="/cart" className="nav-link">
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
-              alt="nav cart"
-              className="nav-bar-img"
-            />
-          </Link>    
-        </li>
-      </ul>
-    </div>
-   </nav> 
+          </li>
+          <li className="nav-menu-item-mobile">
+            <Link to="/products" className="nav-link">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png"
+                alt="nav products"
+                className="nav-bar-img"
+              />
+            </Link>
+          </li>
+          <li className="nav-menu-item-mobile">
+            <Link to="/cart" className="nav-link">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
+                alt="nav cart"
+                className="nav-bar-img"
+              />
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   )
-}  
+}
 
 export default withRouter(Header)
